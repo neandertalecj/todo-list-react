@@ -15,7 +15,7 @@ const Todo = props => (
         <button 
             type="button" 
             onClick={() => props.deleteTask(props.task.id)} 
-        >x</button>
+        >×</button>
     </li>
 )
  
