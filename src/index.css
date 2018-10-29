@@ -3,10 +3,15 @@ body{
   padding: 0; 
 }
 
+:root{
+  --bg-color: #E7AE00;
+  --sec-color: #070500;
+  --fn-color: #FFF;
+}
+
 form{
-  /* display: flex; */
-  background-color: #E7AE00;
-  color: #FFF;
+  background-color: var(--bg-color);
+  color: var(--fn-color);
   font-size: 25px;
   text-align: center;
   padding: 30px 0;
@@ -18,12 +23,12 @@ input[type=text]{
   height: 32px;
   float:left;
   font-size: 20px;
-  border: 1px solid #070500;
+  border: 1px solid var(--sec-color);
 }
 
 .btn{
-  background-color: #070500;
-  color: #D5D9D1;
+  background-color: var(--sec-color);
+  color: var(--fn-color);
   float: left;
   width: 20%;
   height: 36px;
@@ -56,26 +61,21 @@ ol{
 }
 
 .close{
+  all: unset;
   width: 23px;
   height: 23px;
-  background-color: #E7AE00;
+  background-color: var(--bg-color);
   border-radius: 50% 50%;
   position: absolute;
   right: 0;
   cursor: pointer;
-  color:white;
+  color: var(--fn-color);
   text-align: center;
   font-size: 23px;
-  /* line-height: 200px; */
-  /* position: relative; */
+  line-height: 23px;
 }
 
-.close p{
-  position: absolute;
-  top: -23px;
-  right: 5px;
 
-}
 
 li{
   position: relative;

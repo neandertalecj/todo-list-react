@@ -12,9 +12,9 @@ const Todo = props => (
         >
             {props.task.text}
         </span>
-        <span className="close"
+        <button className="close"
             onClick={() => props.deleteTask(props.task.id)} 
-        ><p>×</p></span>
+        >×</button>
     </li>
 )
  
