@@ -13,9 +13,8 @@ const Todo = props => (
             {props.task.text}
         </span>
         <span className="close"
-            // type="button" 
             onClick={() => props.deleteTask(props.task.id)} 
-        >×</span>
+        ><p>×</p></span>
     </li>
 )
  

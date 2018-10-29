@@ -6,7 +6,7 @@ body{
 form{
   /* display: flex; */
   background-color: #E7AE00;
-  color: #D5D9D1;
+  color: #FFF;
   font-size: 25px;
   text-align: center;
   padding: 30px 0;
@@ -66,6 +66,15 @@ ol{
   color:white;
   text-align: center;
   font-size: 23px;
+  /* line-height: 200px; */
+  /* position: relative; */
+}
+
+.close p{
+  position: absolute;
+  top: -23px;
+  right: 5px;
+
 }
 
 li{
