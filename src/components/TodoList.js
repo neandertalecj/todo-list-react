@@ -66,10 +66,10 @@ class TodoList extends Component {
         return ( 
             <div>
                 <form onSubmit={this.addTask}>
-                    <p>Task list</p>
+                    <h2>Task list</h2>
                     <div className="add-task">
                         <input type="text" name="task" required />
-                        <button submit="submit">Ok</button>
+                        <button type="submit" className="btn">Ok</button>
                     </div>
                 </form>
                 <ol>

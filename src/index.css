@@ -1,5 +1,75 @@
-body {
+body{
+  margin: 0;
+  padding: 0; 
+}
+
+form{
+  /* display: flex; */
+  background-color: #E7AE00;
+  color: #D5D9D1;
+  font-size: 25px;
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 20px;
+}
+
+input[type=text]{
+  width: 75%;
+  height: 32px;
+  float:left;
+  font-size: 20px;
+  border: 1px solid #070500;
+}
+
+.btn{
+  background-color: #070500;
+  color: #D5D9D1;
+  float: left;
+  width: 20%;
+  height: 36px;
+  font-size: 20px;
+	line-height: 29px;
+	cursor: pointer;
+  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+}
+
+.add-task:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.add-task{
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+
+ol{
+  font-size: 20px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.close{
+  width: 23px;
+  height: 23px;
+  background-color: #E7AE00;
+  border-radius: 50% 50%;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  color:white;
+  text-align: center;
+  font-size: 23px;
+}
+
+li{
+  position: relative;
+  margin-bottom: 10px;
+  padding-right: 30px;
 }
