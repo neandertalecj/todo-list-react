@@ -45,16 +45,6 @@ class TodoList extends Component {
         this.saveTaskList(list)
     }
 
-    // hendleTextDecor = (id) => {
-    //     const list = this.state.list.map(task => ({
-    //             id: task.id, 
-    //             text: task.text, 
-    //             //lineThrough: (task.id === id) && (task.lineThrough = !task.lineThrough)
-    //             lineThrough: (task.id === id) && (!task.lineThrough)
-    //         })
-    //     )
-    //     this.setState({list})
-    // }
     toggleCurrentTask = id => {
         const list = this.state.list.map(task => ({
             ...task,
