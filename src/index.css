@@ -58,6 +58,7 @@ ol{
   font-size: 20px;
   width: 75%;
   margin: 0 auto;
+  padding-left: 70px;
 }
 
 .close{
@@ -81,4 +82,15 @@ li{
   position: relative;
   margin-bottom: 10px;
   padding-right: 30px;
+}
+
+.currentTask{
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--bg-color);
+  position: absolute;
+  left: -72px;
+  top: 0;
+  text-align: center;
+  line-height: 18px;
 }

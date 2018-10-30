@@ -6,6 +6,12 @@ const decorate = ({ task: { lineThrough } }) => ({
 
 const Todo = props => (
     <li>
+        <div 
+            className="currentTask"
+            onClick={() => props.toggleCurrentTask(props.task.id)}
+        >
+            {props.task.currentTask ? '▹' : ''}
+        </div>
         <span 
             style={decorate(props)}
             onClick={() => props.toggleTask(props.task.id)}

@@ -31,7 +31,8 @@ class TodoList extends Component {
             {
                 id: nanoid(),
                 text: e.target.task.value,
-                lineThrough: false
+                lineThrough: false,
+                currentTask: false
             }
         ]
         this.saveTaskList(list)
@@ -54,6 +55,13 @@ class TodoList extends Component {
     //     )
     //     this.setState({list})
     // }
+    toggleCurrentTask = id => {
+        const list = this.state.list.map(task => ({
+            ...task,
+            currentTask: (task.id === id) && (!task.currentTask)
+        }))
+        this.saveTaskList(list)
+    }
 
     
 
@@ -79,6 +87,7 @@ class TodoList extends Component {
                             task={task} 
                             deleteTask={this.deleteTask} 
                             toggleTask={this.toggleTask}
+                            toggleCurrentTask={this.toggleCurrentTask}
                         />
                     ))}
                 </ol>
